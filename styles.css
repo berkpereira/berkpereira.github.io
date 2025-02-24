@@ -118,6 +118,18 @@ a:focus {
   color: #777;
 }
 
+.footer-line {
+  display: flex;               /* Put items in a row */
+  justify-content: space-between;  /* Space them out */
+  align-items: center;         /* Vertically center items */
+}
+
+/* Remove default paragraph spacing if you like */
+.footer-line p {
+  margin: 0;
+  padding: 0;
+}
+
 .social-links {
   display: flex;
   justify-content: center;  /* Centers the icons horizontally */
@@ -154,7 +166,7 @@ a:focus {
 
 /* Left Block (Profile Section) */
 aside {
-  flex: 0 0 220px;
+  flex: 0 0 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,7 +203,8 @@ aside img {
 
 /* Right Block (Bio and Links) */
 .bio-content p {
-  margin-bottom: 1.2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
   line-height: 1.8;
 }
 
