@@ -13,6 +13,19 @@ body {
   background-color: #fdfdfd;
 }
 
+/* Applies to all links on your site */
+a:link,
+a:visited {
+  color: #003775;     /* lighter than Oxford blue */
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #000e1f;      /* Slightly darker blue */
+  text-decoration: underline; /* Optional: show underline on hover/focus */
+}
+
 /* Container */
 .wrapper {
   width: 90%;
@@ -23,7 +36,7 @@ body {
 
 /* Header */
 .site-header {
-  background-color: #002147; 
+  background-color: #002147; /* Oxford blue */
   color: #fff;
   padding: 10px;
 }
@@ -146,6 +159,18 @@ aside img {
   object-fit: cover;
 }
 
+.plain-link,
+.plain-link:visited,
+.plain-link:active {
+  color: inherit;         /* Inherit the colour from the parent element */
+  text-decoration: none;  /* Remove the underline */
+}
+
+.plain-link:hover,
+.plain-link:focus {
+  text-decoration: underline; /* Optional: show underline on hover */
+}
+
 /* Social Icons */
 .social-links {
   display: flex;
@@ -155,9 +180,9 @@ aside img {
 }
 
 /* Right Block (Bio and Links) */
-.bio-content {
-  flex: 1;
-  padding: 20px;
+.bio-content p {
+  margin-bottom: 1.2em;
+  line-height: 1.8;
 }
 
 /* Mobile Optimization */
