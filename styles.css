@@ -103,11 +103,44 @@ body {
   margin-top: 10px;
 }
 
-
 .social-links a.social-button {
   display: inline-block;
   transition: transform 0.2s ease-in-out;
 }
 .social-links a.social-button:hover {
   transform: scale(1.1);
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  /* Stack Profile & Content on small screens */
+  .main-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  aside {
+      flex: 1;
+      width: 100%;
+  }
+
+  main {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .site-header .wrapper {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .site-nav {
+      margin-top: 10px;
+      justify-content: center;
+  }
+
+  .social-links {
+      justify-content: center;
+  }
 }
