@@ -119,15 +119,15 @@ a:focus {
 }
 
 .footer-line {
-  display: flex;               /* Put items in a row */
-  justify-content: space-between;  /* Space them out */
-  align-items: center;         /* Vertically center items */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* or flex-start, or space-around, etc. */
+  gap: 20px;              /* ensures at least 20px between items */
 }
 
 /* Remove default paragraph spacing if you like */
 .footer-line p {
   margin: 0;
-  padding: 0;
 }
 
 .social-links {
@@ -203,8 +203,8 @@ aside img {
 
 /* Right Block (Bio and Links) */
 .bio-content p {
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   line-height: 1.8;
 }
 
