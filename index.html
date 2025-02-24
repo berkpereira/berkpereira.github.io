@@ -1,58 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Academic Homepage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #0073e6;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Name — Academic Homepage</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Your Name</h1>
-            <p>Short tagline or description (e.g., "PhD Student in [Your Field]").</p>
-        </header>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a brief bio. Replace this text with a few sentences about your research interests, background, and goals.</p>
-        </section>
-        <section>
-            <h2>Links</h2>
-            <ul>
-                <li><a href="https://link-to-your-cv.com" target="_blank">Curriculum Vitae</a></li>
-                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-                <li><a href="https://link-to-your-research-group.com" target="_blank">Research Group</a></li>
-            </ul>
-        </section>
+  <header class="site-header">
+    <div class="wrapper">
+      <a href="#" class="site-title">My Name</a>
+      <nav class="site-nav">
+        <a class="page-link" href="#bio">Bio</a>
+        <a class="page-link" href="#links">Links</a>
+      </nav>
     </div>
+  </header>
+
+  <main class="page-content">
+    <div class="wrapper">
+      <section id="bio">
+        <h1>Bio</h1>
+        <p>This is a brief bio. Replace this text with a few sentences about your research interests, background, and goals.</p>
+      </section>
+      <section id="links">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://link-to-your-cv.com" target="_blank">Curriculum Vitae</a></li>
+          <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+          <li><a href="https://link-to-your-research-group.com" target="_blank">Research Group</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; 2025 My Name. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
