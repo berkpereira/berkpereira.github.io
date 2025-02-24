@@ -111,23 +111,76 @@ body {
   transform: scale(1.1);
 }
 
+.profile-photo {
+  width: 140pt;
+  height: 140pt;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* Main Layout */
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 0 15px;    /* <-- Adds horizontal padding so text isn’t flush */
+}
+
+/* Left Block (Profile Section) */
+aside {
+  flex: 0 0 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Profile Photo */
+aside img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Right Block (Bio and Links) */
+.bio-content {
+  flex: 1;
+  padding: 20px;
+}
+
 /* Mobile Optimization */
 @media (max-width: 600px) {
-  /* Stack Profile & Content on small screens */
   .main-container {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding: 0 15px;    /* <-- Adds horizontal padding so text isn’t flush */
+  }
+
+  .profile-photo {
+    width: 100pt; /* adjust to your preferred smaller size */
+    height: 100pt;
   }
 
   aside {
-      flex: 1;
       width: 100%;
   }
 
-  main {
+  .bio-content {
       width: 100%;
-      padding: 10px;
+      padding: 0 20px;
   }
 
   .site-header .wrapper {

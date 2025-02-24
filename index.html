@@ -19,16 +19,18 @@
     </header>
 
   <!-- Top section: Left block (photo, name, social icons) + Right block (bio, links) -->
-  <div class="wrapper" style="display: flex; align-items: flex-start; gap: 30px; margin: 20px auto; max-width: 900px;">
+  <!-- <div class="wrapper" style="display: flex; align-items: flex-start; gap: 30px; margin: 20px auto; max-width: 900px;"> -->
+  <div class="main-container">
     
     <!-- LEFT BLOCK -->
-    <aside style="flex: 0 0 220px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <aside>
       <!-- Your profile photo -->
-      <img src="face-crop.jpg" alt="Profile Photo" 
-     style="width: 140pt; height: 140pt; border-radius: 50%; object-fit: cover;">
+      <img class="profile-foto" srcset="face-crop-small.jpg 600w, face-crop.jpg 1200w" alt="Profile Photo">
       
       <!-- Your name -->
-      <h2 style="margin-top: 2px;">Gabriel Berk Pereira</h2>
+      <h3 style="margin-top: 2px;">Gabriel Berk Pereira</h3>
+
+      <p style="margin-top: 10px;">PhD Candidate, Department of Engineering Science, University of Oxford</p>
       
       <!-- Social Icons (moved from footer) -->
       <div class="social-links" style="margin-top: 10px; white-space: nowrap;">
@@ -105,8 +107,8 @@
     </aside>
     
     <!-- RIGHT BLOCK -->
-    <main style="flex: 1;">
-        <p>This is a brief bio. I will replace this text with a few sentences about your research interests, background, and goals.</p>
+    <main>
+        <p>This is a brief bio. I will replace this text with a few sentences about my research interests, background, and goals.</p>
     </main>
   </div>
 
