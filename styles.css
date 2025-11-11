@@ -208,6 +208,10 @@ aside img {
   line-height: 1.8;
 }
 
+.publication-entry {
+  margin: 0 0 1.5em 0;
+}
+
 /* Mobile Optimization */
 @media (max-width: 600px) {
   .main-container {
